@@ -7,8 +7,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script defer src="script.js"></script>
 
 </head>
 <body>
@@ -22,37 +23,37 @@
         <i class="bx bx-menu"></i>
       </div>
 
-      <nav>
+      <nav class="nav-container">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" id="contact">CONTACT</a></li>
         </ul>
       </nav>
 
     </div>
+
+    <div class="home">
+      <h1>WE ARE CREATIVES</h1>
+      <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg"><g stroke="#fff" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3v100M3 95.484l15 15 15-15"/></g></svg>
+    </div>
+
   </header>
 
 
-  <section class="home">
-    <div class="home-container">
-      <h1>We are creatives</h1>
-      <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg"><g stroke="#fff" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3v100M3 95.484l15 15 15-15"/></g></svg>
-    </div>
-  </section>
-
-  <section>
-    <div class="cards">
+  <section class="cards">
       <div class="card card-1">
-        <h2>Transform your brand</h2>
-        <p>
-          We are a full-service creative agency specializing in helping brands grow fast. 
-        Engage your clients through compelling visuals that do most of the marketing for you.
-        </p>
-  
-        <a href="#">Learn more</a>
+        <div class="title title-1">
+          <h2>Transform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <a href="#">LEARN MORE</a>
+        </div>
       </div>
+
       <div class="card card-2">
 
       <!-- content -->
@@ -65,38 +66,39 @@
       </div>
 
       <div class="card card-4">
-        <h2>Stand out to the right audience</h2>
-        <p>
-          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-        </p>
-  
-        <a href="#">Learn more</a>
+        <div class="title title-2">
+          <h2>Stand out to the right audience</h2>
+          <p>
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+          </p>
+          <a href="#">LEARN MORE</a>
+        </div>
       </div>
 
       <div class="card card-5">
+       <div class="title title-3">
         <h2>Graphic design</h2>
         <p>
           We are a full-service creative agency specializing in helping brands grow fast. 
         Engage your clients through compelling visuals that do most of the marketing for you.
         </p>
+       </div>
       </div>
 
       <div class="card card-6">
-        <h2>Photography</h2>
+        <div class="title title-4">
+          <h2>Photography</h2>
         <p>
           Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
         </p>
+        </div>
       </div>
-
-      
-    </div>
-
   </section>
 
   
 
 <section class="testimonials">
-  <h3>Client testimonials</h3>
+  <h3>CLIENTE TESTIMONIALS</h3>
 
   <div class="testimonials-container">
     <div class="tile tile-1">
@@ -104,9 +106,9 @@
       <p>
         We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
       </p>
-      <div class="name">
-        <span>Emily R.</span>
-        <span>Marketing Director</span>
+      <div class="name-container">
+        <span  class="name">Emily R.</span>
+        <span class="profession">Marketing Director</span>
       </div>
     </div>
 
@@ -115,9 +117,9 @@
       <p>
         Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
       </p>
-      <div class="name">
-        <span>Thomas S.</span>
-        <span>Chief Operating Officer</span>
+      <div class="name-container">
+        <span class="name">Thomas S.</span>
+        <span class="profession">Chief Operating Officer</span>
       </div>
     </div>
 
@@ -126,9 +128,9 @@
       <p>
         Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
       </p>
-      <div class="name">
-        <span>Jennie F.</span>
-        <span>Business Owner</span>
+      <div class="name-container">
+        <span  class="name">Jennie F.</span>
+        <span class="profession">Business Owner</span>
       </div>
     </div>
   </div>
@@ -160,29 +162,28 @@
 
   <div class="footer-container">
     <h4>sunnyside</h4>
-  </div>
-
-  <nav class="nav">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-    </ul>
-
+    <nav class="nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  
     <div class="social-networks">
-      <a href="#" class="bx bxl-facebook"></a>
+      <a href="#" class="bx bxl-facebook-square"></a>
       <a href="#" class="bx bxl-instagram"></a>
       <a href="#" class="bx bxl-twitter"></a>
       <a href="#" class="bx bxl-pinterest"></a>
     </div>
-  </nav>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    
   </div>
 
-</footer>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.ernstudy.com">Ernstudy</a>.
+  </div>
   
 
 </body>
